@@ -1,0 +1,22 @@
+{
+  "carousel": [
+    "/img/banner1.jpg",
+    "/img/banner2.jpg",
+    "/img/banner3.jpg"
+    ],
+  "announcement": "Website hi Beta Version a la ni rih a, siam fel a nih hnuah Domain name pangngaiah sawn a ni ang.",
+  "tagLine":"Tlawm si... tui tho si..!",
+  "content":"Kum 40 chuang zet thingpui dawr siam a sulhnu lo nei tawh kan ni. Mizo Thingpui Dawr awlsamna leh tunlai restaurant nawmna chawhpawlh ah hian Lo leng la, tui leh puar takin lo ei ve rawh le.",
+  "address": [
+    "Rini Tea Stall,",
+    "D/T-22, Dinthar,",
+    "Dinthar Kawn Mineco road,",
+    "Aizawl, Mizoram - 796009."
+    ],
+  "phoneMain": [
+    "+918837331430",
+    "+919366820034"
+    ],
+  "open": 6,
+  "close": 17
+}

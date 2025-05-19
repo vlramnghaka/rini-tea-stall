@@ -1,0 +1,280 @@
+.headings {
+    font-size: 30px;
+    padding: 7px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.navbar a {
+    display: inline-block;
+    flex-grow: 1;
+    flex-basis: 40px;
+    flex-shrink: 1;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--light);
+    background-color: var(--primary);
+    border-right: 1px solid var(--light);
+    border-top: 1px solid var(--light);
+    padding: 7px;
+}
+
+navbar a:last-child {
+    border-right: none;
+}
+
+.navbar a.active {
+    background-image: linear-gradient(
+        to bottom,
+        var(--secondary),
+        red,
+        var(--secondary)
+    );
+}
+
+.navbar span {
+    font-size: 8px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.card {
+    flex: 1 0 100px;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 7px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.card-img {
+    width: 20vh;
+    max-width: 300px;
+    min-width: 100px;
+    height: auto;
+    margin: 7px auto;
+}
+
+.card-img > img {
+    width: 100%;
+    height: auto;
+}
+
+.card-head {
+    font-weight: bold;
+    font-family: "Inter", Sans-Serif;
+}
+
+.card-body {
+    font-style: italic;
+    margin: 0 3px 3px 3px;
+    font-size: 0.8rem;
+}
+
+.button-group {
+  width: 100%;
+  margin: 12px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.btn {
+  flex: 1 0 50px;
+  white-space: nowrap;
+  padding: 7px;
+  font-family: 'Arial', Sans-Serif;
+  font-size: 0.7rem;
+  text-align: center;
+  background-image: linear-gradient(to bottom,lightgray, whitesmoke, lightgray);
+  color: var(--dark);
+  margin: 0;
+}
+
+.btn.active {
+  color: var(--light);
+  background-image: linear-gradient(to bottom, var(--secondary), red, var(--secondary));
+}
+
+.faq-container {
+  display: block;
+  text-align: left;
+  padding: 7px;
+}
+
+.faq-container details {
+  margin: 3px auto;
+  padding: 7px;
+  border: 2px solid black;
+  border-radius: 0 10px 10px 10px;
+  background-color: var(--secondary);
+  color: var(--light);
+  width: 95%;
+}
+
+.faq-container summary {
+  font-family: 'Arial', Sans-Serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.faq-container p {
+  display: block;
+  margin: 3px;
+  padding: 7px;
+  border: 1px dashed black;
+  color: var(--dark);
+  background-color: var(--light);
+  font-size: 0.7rem;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.video-responsive {
+  width: 97%;
+  height: auto;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.video-responsive iframe {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.announcement {
+  display: block;
+  padding: 3px;
+  font-family: 'Arial', Sans-Serif;
+  font-size: 0.7rem;
+  color: var(--secondary);
+  width: 100%;
+  text-align: centre;
+}
+
+.tag-line {
+  font-family: 'Dancing Script', Cursive;
+  font-size: 2rem;
+  width: 80%;
+  max-width: 600px;
+  min-width: 200px;
+  height: fit-content;
+  margin: 50px auto;
+}
+
+.phones {
+  margin: 7px;
+}
+
+.phones a{
+  text-decoration: none;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.phones a:hover {
+  text-decoration: underline;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin: 10px auto;
+}
+
+.carousel {
+  width: 100%;
+  height: auto;
+}
+
+.flex-box {
+  width: 97%;
+  margin: 7px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.selected-list {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 7px auto;
+}
+
+.selected-list >  ol {
+  text-align: left;
+  width: 95%;
+  max-width: 600px;
+  margin: 7px auto;
+}
+
+ol > li {
+  margin: 3px 0;
+}
+
+li > input {
+  width: 4rem;
+  text-align: center;
+  border: none;
+  padding: 3px;
+  border-bottom: 1px solid black;
+}
+
+.big-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  text-align: center;
+  margin: 7px auto;
+}
+
+.big-image img {
+  width: 100%;
+  height: auto;
+}
+
+.back {
+  width: fit-content;
+  padding: 5px;
+  margin: 12px auto;
+}
+
+input.searchbar {
+  margin: 7px auto;
+  width: 100%;
+  max-width: 200px;
+  padding: 7px;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
