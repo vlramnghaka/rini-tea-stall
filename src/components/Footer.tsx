@@ -16,7 +16,7 @@ const Footer = () => {
     <footer>
       <nav className="navbar" lang='en'>
         {pages.map((page, index) => (
-        <NavLink to={page.path} key={index}>
+        <NavLink to={page.path} key={index} replace>
           <FontAwesomeIcon icon={page.icn} />
           <br />
           <span>{page.name}</span>
