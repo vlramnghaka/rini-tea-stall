@@ -17,10 +17,13 @@ type HomeDataType = {
 const OpenStatus = ({start, end}:{start:number; end:number}) => {
   const dt = new Date();
   const currentHour = dt.getHours();
-
-  if (currentHour < start) {
+  const currentDay = dt.getDate();
+  
+  if (currentDay === 0) {
+    return <div className='openStatus'>Pathian ni a nih avangin kan vawiin chu dawr kan inhawng lo ang</div>
+  } else if (currentDay !== 0 && currentHour < start) {
     return <div className='openStatus'>Kan la inhawng lo deuh</div>
-  } else if (currentHour >= end) {
+  } else if (currentDay !== 0 && currentHour >= end) {
     return <div className='openStatus'>Vawiin atan kan inkhar tawh</div>
   }
 
