@@ -117,7 +117,8 @@ const PriceCalculator = () => {
         <div>
           {selected.length > 0 && (
           <>
-          <strong>Total Price:</strong> ₹{totalPrice}
+          <strong>Total Price:</strong> ₹{totalPrice} <br/>
+          <em>Note: Container a pack duh tan ₹10/container charge a awm.</em>
           </>)}
           
         </div>
